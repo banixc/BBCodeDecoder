@@ -14,9 +14,10 @@
 `java -jar BBCodeDecoder.jar 1.txt 2.txt 3.txt `
 来生成对应的HTML
 
-## 解析器流程
+## 主要类介绍
 
 ### Item基类 BCItem(abstract)
+
 声明了 toString(),toHtml(),toOmit()三个抽象函数以便实现多态
 #### toHtml()
 输出为HTML
@@ -24,37 +25,46 @@
 输出简略的String
 
 ### BCEmoji extends BCItem
+
 保存一个Emoji表情 [em**]
 
 ### BCImg extends BCItem
+
 保存一个图片 [img=***]
 
 ### BCCode extends BCItem
+
 保存一段代码片段 [code]***[/code]
 
 ### BCString extends BCItem
+
 保存一段文本 
 String string:文本的值
 BCStyle style:文本的风格
 
 ### BCUrl extends BCString
+
 保存一段带链接的文本 
 String url:其指向的链接
 
 ### BCItems extends BCItem
+
 保存一个BCItem的列表
 
 ### BCQuote extends BCItem
+
 保存一个引用
 String quoter:被引用者
 BCItem bCItem:被引用的内容
 
 ### StaticVal
+
 保存静态变量
 * Token类型
 * regex 正则表达式
 
 ### 核心类 BCDecode
+
 #### 构造函数 BCDecode(String)
 传入BBCode的初始String，通过正则表达式分割Token，使用getTokenType()获取Token的类型后生成一个TokenList。
 #### 解析函数 getItem(int start,int end)
