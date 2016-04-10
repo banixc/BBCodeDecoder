@@ -1,4 +1,4 @@
-package com.npupt.npubits.bbcode;
+﻿package com.npupt.npubist.bbcode;
 
 import java.util.List;
 
@@ -8,12 +8,7 @@ public class BCCode extends BCItem{
     public BCCode(String code) {
         this.code = code;
     }
-/**
- * 
- * @param list	
- * @param start
- * @param end
- */
+
     public BCCode(List<BCToken> list,int start,int end) {
         code = "";
         for(int i = start; i < end; i++) {

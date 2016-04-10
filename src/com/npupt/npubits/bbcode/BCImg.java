@@ -19,7 +19,7 @@ public class BCImg extends BCItem {
 
     @Override
     public String toOmit() {
-        return "[ͼƬ]" ;
+        return "[图片]" ;
     }
 
 }

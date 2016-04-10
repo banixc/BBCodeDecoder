@@ -1,4 +1,4 @@
-﻿package com.npupt.npubits.bbcode;
+package com.npupt.npubits.bbcode;
 
 import java.util.ArrayList;
 import java.util.Iterator;

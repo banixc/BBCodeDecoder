@@ -1,8 +1,11 @@
 package com.npupt.npubits.bbcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class StaticVal {
 
-    public static final int UNKNOW = -1;
+    public static final int UNKNOWN = -1;
     public static final int STRING = 0;
     public static final int QUOTE_OPEN = 1;
     public static final int QUOTE_OPEN_ID = 2;
@@ -12,7 +15,7 @@ public class StaticVal {
     public static final int U_OPEN = 6;
     public static final int I_OPEN = 7;
     public static final int B_OPEN = 8;
-    public static final int IMG_OPEN = 9;
+    public static final int IMG = 9;
     public static final int IMG_OPEN_WITH_SRC = 10;
     public static final int URL_OPEN = 11;
     public static final int URL_OPEN_WITH_URL = 12;
@@ -27,14 +30,14 @@ public class StaticVal {
     public static final int U_CLOSE = 53;
     public static final int I_CLOSE = 54;
     public static final int B_CLOSE = 55;
-    public static final int IMG_CLOSE = 56;
     public static final int URL_CLOSE = 57;
     public static final int PRE_CLOSE = 58;
     public static final int CODE_CLOSE = 59;
 
     public static String regex;
-    
+
     public static final String urlRegex = "[a-zA-z]+://[^\\s]*";
+    public static final String imgRegex = "\\[img\\][a-zA-z]+://[^\\s]*?(\\.jpg|\\.gif|\\.png|\\.jpeg)\\[/img\\]";
 
     public static final String[] tokenList = new String[]{
             "b",
@@ -43,10 +46,8 @@ public class StaticVal {
             "/i",
             "u",
             "/u",
-            "img",
+            "img\\][a-zA-z]+://[^\\s]*?(\\.jpg|\\.gif|\\.png|\\.jpeg)\\[/img",
             "img=[a-zA-z]+://[^\\s]*?(\\.jpg|\\.gif|\\.png|\\.jpeg)",
-            "/img",
-            //"url=(http|https|ftp)\\://([a-zA-Z0-9\\.\\-]+(\\:[a-zA-Z0-9\\.&amp;%\\$\\-]+)*@)?((25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9])\\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[0-9])|([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\.[a-zA-Z]{2,4})(\\:[0-9]+)?(/[^/][a-zA-Z0-9\\.\\,\\?\\'\\\\/\\+&amp;%\\$#\\=~_\\-@]*)*",
             "url",
             "/url",
             "url=[a-zA-z]+://[^\\s+^\\[]*",

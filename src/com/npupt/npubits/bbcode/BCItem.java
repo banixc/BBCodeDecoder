@@ -3,14 +3,14 @@ package com.npupt.npubits.bbcode;
 public abstract class BCItem {
 
     public abstract String toString();
-	/**
-	 * ×ª»»ÎªhtmlÒÔ±ãÔÚWebViewÖĞÏÔÊ¾
-	 * @return String ¶ÔÓ¦µÄhtml
-	 */
+    /**
+     * è½¬æ¢ä¸ºhtmlä»¥ä¾¿åœ¨WebViewä¸­æ˜¾ç¤º
+     * @return String å¯¹åº”çš„html
+     */
     public abstract String toHtml();
     /**
-     * »ñÈ¡Æä¼òÂÔĞÅÏ¢ÒÔ±ãÔÚTextViewÖĞÏÔÊ¾
-     * @return String ¼òÂÔĞÅÏ¢
+     * è·å–å…¶ç®€ç•¥ä¿¡æ¯ä»¥ä¾¿åœ¨TextViewä¸­æ˜¾ç¤º
+     * @return String ç®€ç•¥ä¿¡æ¯
      */
     public abstract String toOmit();
 }

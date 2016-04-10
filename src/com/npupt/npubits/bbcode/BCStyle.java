@@ -7,12 +7,12 @@ public class BCStyle {
     public boolean i;
     public boolean b;
     /**
-     * 
-     * @param size 文本大小
-     * @param color 文本颜色
-     * @param u 是否有下划线
-     * @param i 是否斜体
-     * @param b 是否加粗
+     *
+     * @param size 鏂囨湰澶у皬
+     * @param color 鏂囨湰棰滆壊
+     * @param u 鏄惁鏈変笅鍒掔嚎
+     * @param i 鏄惁鏂滀綋
+     * @param b 鏄惁鍔犵矖
      */
     public BCStyle(int size,String color,boolean u, boolean i,boolean b){
         this.size = size;
@@ -22,5 +22,3 @@ public class BCStyle {
         this.b = b;
     }
 }
-
-
