@@ -11,7 +11,7 @@
 	String html = item.toHtml();
 
 或直接使用已编译的`BBCodeDecoder.jar`:
-	java -jar BBCodeDecoder.jar 1.txt 2.txt 3.txt 
+`java -jar BBCodeDecoder.jar 1.txt 2.txt 3.txt `
 来生成对应的HTML
 
 ## 解析器流程
