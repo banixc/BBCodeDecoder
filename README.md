@@ -14,6 +14,21 @@
 `java -jar BBCodeDecoder.jar 1.txt 2.txt 3.txt `
 来生成对应的HTML
 
+## 支持的标签
+
+`[i]斜体[/i]` 
+`[b]粗体[/b]`
+`[u]下划线[/u]`
+`[size=1-7]字体大小[/size]`
+`[color=blue]字体颜色[/size]`
+`[url=***]带文本的链接[/url]`
+`[url]链接[/url]` (可省略)
+`[img]图片链接[/img]`
+`[img=图片链接]`
+`[quote=***]引用内容[/quote]`
+`[code]代码[/code]`
+`[pre]预格式化文本[/code]`
+
 ## 主要类介绍
 
 ### Item基类 BCItem(abstract)
