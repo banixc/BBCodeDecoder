@@ -1,3 +1,15 @@
 eclipse.preferences.version=1
 encoding//src/com/npupt/npubits/bbcode/*.java=UTF-8
-
+encoding//src/com/npupt/npubits/bbcode/BCCode.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCDecode.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCEmoji.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCImg.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCItem.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCItems.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCQuote.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCString.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCStyle.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCToken.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/BCUrl.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/FileOp.java=UTF-8
+encoding//src/com/npupt/npubits/bbcode/StaticVal.java=UTF-8

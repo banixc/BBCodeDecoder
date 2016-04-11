@@ -1,8 +1,5 @@
 package com.npupt.npubits.bbcode;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class StaticVal {
 
     public static final int UNKNOWN = -1;

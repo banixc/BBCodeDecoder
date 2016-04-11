@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Created by root on 2016/4/7.
+ */
 public class BCItems extends BCItem implements Iterable<BCItem>{
 
     protected List<BCItem> itemList;

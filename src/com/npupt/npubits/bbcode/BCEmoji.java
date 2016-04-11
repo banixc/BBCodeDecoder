@@ -1,5 +1,6 @@
 package com.npupt.npubits.bbcode;
 
+
 public class BCEmoji extends BCItem {
 
     protected int emojiId;

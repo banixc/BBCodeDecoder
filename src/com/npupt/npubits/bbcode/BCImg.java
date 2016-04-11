@@ -14,7 +14,7 @@ public class BCImg extends BCItem {
     }
     @Override
     public String toHtml() {
-        return "<img style=\"max-width::100%;height:auto\" src=\"" + src + "\"/>";
+        return "<img style=\"max-width:100%;height:auto\" src=\"" + src + "\"/>";
     }
 
     @Override
