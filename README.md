@@ -16,18 +16,18 @@
 
 ## 支持的标签
 
-`[i]斜体[/i]` 
-`[b]粗体[/b]`
-`[u]下划线[/u]`
-`[size=1-7]字体大小[/size]`
-`[color=blue]字体颜色[/size]`
-`[url=***]带文本的链接[/url]`
-`[url]链接[/url]` (可省略)
-`[img]图片链接[/img]`
-`[img=图片链接]`
-`[quote=***]引用内容[/quote]`
-`[code]代码[/code]`
-`[pre]预格式化文本[/code]`
+    [i]斜体[/i]
+    [b]粗体[/b]
+    [u]下划线[/u]
+    [size=1-7]字体大小[/size]
+    [color=blue]字体颜色[/size]
+    [url=***]带文本的链接[/url]
+    [url]链接[/url] (可省略)
+    [img]图片链接[/img]
+    [img=图片链接]
+    [quote=***]引用内容[/quote]
+    [code]代码[/code]
+    [pre]预格式化文本[/code]
 
 ## 主要类介绍
 
@@ -81,6 +81,6 @@ BCItem bCItem:被引用的内容
 ### 核心类 BCDecode
 
 #### 构造函数 BCDecode(String)
-传入BBCode的初始String，通过正则表达式分割Token，使用getTokenType()获取Token的类型后生成一个TokenList。
+传入BBCode的初始String，通过正则表达式分割Token，使用getTokenType()获取Token的类型后生成一个TokenList
 #### 解析函数 getItem(int start,int end)
 遍历从start到end范围的Token以生成一个BCItem并返回
